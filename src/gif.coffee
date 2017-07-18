@@ -170,7 +170,8 @@ class GIF extends EventEmitter
       @_canvas.height = @options.height
 
     ctx = @_canvas.getContext '2d'
-    ctx.setFill = @options.background
+    ctx.setFill = @options.transparent
+
     ctx.fillRect 0, 0, @options.width, @options.height
     ctx.drawImage image, 0, 0
 

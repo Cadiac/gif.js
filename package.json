@@ -1,6 +1,6 @@
 {
   "name": "gif.js",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "JavaScript GIF encoding library",
   "author": "Johan Nordberg <code@johan-nordberg.com>",
   "main": "index.js",
@@ -12,7 +12,8 @@
     "uglify-js": "^2.7.5"
   },
   "scripts": {
-    "prepublish": "./bin/build"
+    "build": "./bin/build",
+    "prepublishOnly": "npm run build"
   },
   "browser": "./dist/gif.js",
   "keywords": [
@@ -21,5 +22,6 @@
     "encoder"
   ],
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "dependencies": {}
 }
